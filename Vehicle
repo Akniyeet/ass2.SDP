@@ -1,0 +1,45 @@
+public interface Vehicle {
+    String getType();
+}
+
+class Car implements Vehicle {
+    @Override
+    public String getType() {
+        return "Land Vehicle: Car";
+    }
+}
+
+class Bike implements Vehicle {
+    @Override
+    public String getType() {
+        return "Land Vehicle: Bike";
+    }
+}
+
+class Truck implements Vehicle {
+    @Override
+    public String getType() {
+        return "Land Vehicle: Truck";
+    }
+}
+
+class Boat implements Vehicle {
+    @Override
+    public String getType() {
+        return "Water Vehicle: Boat";
+    }
+}
+
+class Ship implements Vehicle {
+    @Override
+    public String getType() {
+        return "Water Vehicle: Ship";
+    }
+}
+
+class Submarine implements Vehicle {
+    @Override
+    public String getType() {
+        return "Water Vehicle: Submarine";
+    }
+}
