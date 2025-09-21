@@ -1,0 +1,46 @@
+abstract class VehicleFactory {
+    public abstract Vehicle createLandVehicle();
+    public abstract Vehicle createWaterVehicle();
+}
+
+class LandVehicleFactory extends VehicleFactory {
+    @Override
+    public Vehicle createLandVehicle() {
+        return new Car();
+    }
+
+    @Override
+    public Vehicle createWaterVehicle() {
+        return null;
+    }
+
+
+    public Vehicle createAnotherLandVehicle() {
+        return new Bike();
+    }
+
+    public Vehicle createThirdLandVehicle() {
+        return new Truck();
+    }
+}
+
+class WaterVehicleFactory extends VehicleFactory {
+    @Override
+    public Vehicle createLandVehicle() {
+        return null;
+    }
+
+    @Override
+    public Vehicle createWaterVehicle() {
+        return new Boat();
+    }
+
+
+    public Vehicle createAnotherWaterVehicle() {
+        return new Ship();
+    }
+
+    public Vehicle createThirdWaterVehicle() {
+        return new Submarine();
+    }
+}
