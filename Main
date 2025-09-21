@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+
+
+        LandVehicleFactory landFactory = new LandVehicleFactory();
+        WaterVehicleFactory waterFactory = new WaterVehicleFactory();
+
+
+        Vehicle landVehicle1 = landFactory.createLandVehicle();  // Car
+        Vehicle landVehicle2 = landFactory.createAnotherLandVehicle();  // Bike
+        Vehicle landVehicle3 = landFactory.createThirdLandVehicle();  // Truck
+
+        Vehicle waterVehicle1 = waterFactory.createWaterVehicle();  // Boat
+        Vehicle waterVehicle2 = waterFactory.createAnotherWaterVehicle();  // Ship
+        Vehicle waterVehicle3 = waterFactory.createThirdWaterVehicle();  // Submarine
+
+
+        System.out.println("Land Vehicle 1: " + landVehicle1.getType());  // Car
+        System.out.println("Land Vehicle 2: " + landVehicle2.getType());  // Bike
+        System.out.println("Land Vehicle 3: " + landVehicle3.getType());  // Truck
+        System.out.println("Water Vehicle 1: " + waterVehicle1.getType());  // Boat
+        System.out.println("Water Vehicle 2: " + waterVehicle2.getType());  // Ship
+        System.out.println("Water Vehicle 3: " + waterVehicle3.getType());  // Submarine
+    }
+}
